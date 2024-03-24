@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="icon-container">
+
+      <form action="">
+        <div>
+          <p>DAY</p>
+          <input type="number" id="day" placeholder="DD">
+          <span class="errormessage"></span>
+        </div>
+        <div>
+          <p>MONTH</p>
+          <input type="number" id="month" placeholder="MM">
+          <span class="errormessage"></span>
+        </div>
+        <div>
+          <p>YEAR</p>
+          <input type="number" id="year" placeholder="YYYY">
+          <span class="errormessage"></span>
+        </div>
+      </form>
+      <div class="icon" onclick="handle_click(this)"><img src="./assets/images/icon-arrow.svg" alt="arrow"></div>
+    </div>
+    <p><span id="displayyear">-- </span>years</p>
+    <p><span id="displaymonth">-- </span>months</p>
+    <p><span id="displaydays">-- </span>days</p>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
